@@ -1,0 +1,85 @@
+Bayesian Network (BN) Implementation Plan
+
+Scope
+- Implement BN pipeline to answer probabilistic queries and evaluate performance.
+- Focus now on BN only. Reuse public libraries where sensible (e.g., bnlearn for discretization and structure search), but implement our own CPTs, inference, and evaluator.
+
+Project Structure
+- aai-workshop-w3/ (reference only; do not call)
+- bayesian_net/ (our experiment harness and K-fold runner)
+  - data/ (raw, processed, folds) — source CSVs live under project data/
+  - configs/ (BN config templates per dataset/structure)
+  - reports/ (per-fold CSVs and aggregated summaries; timing; structures/ images)
+  - src/
+    - kfold.py (create stratified K folds, persist indices)
+    - pipeline.py (load → clean → discretize → fit CPTs → evaluate)
+    - reporting.py (CSV writer; aggregation)
+    - cpt.py (estimate CPTs with Laplace smoothing; write/read model config)
+    - evaluator.py (Balanced Acc, F1, AUC, Brier, KL, ECL, timings)
+    - inference/
+      - enumeration.py (exact inference by enumeration)
+      - variable_elimination.py (exact VE with heuristics)
+      - factors.py (factor operations)
+    - structure/
+      - hillclimb.py (wrapper around bnlearn hill-climb + BIC; export edges)
+
+Data Handling
+- Split before everything else using K-fold (default K=5, seed=42).
+- Stratified by target if available. Persist folds to avoid leakage.
+- Cleaning: drop rows with missing values (per user preference).
+- Discretization (if needed for discrete BN): use bnlearn discretization (quantile/equal-frequency) with 5 bins by default; fit bin edges on training folds only and apply to test.
+
+Structure Learning
+- Default: score-based hill-climbing via bnlearn (METHOD=hillclimbsearch, SCORE=BIC, configurable restarts/max_iter) through our wrapper in structure/hillclimb.py.
+- Optionally: PC-Stable (constraint-based) via bnlearn for comparison.
+- Save learnt DAG edges and a rendered PNG under reports/structures/.
+
+Parameter Learning
+- Use our own cpt.py to compute CPTs from training fold (Laplace smoothing l=1) and persist them into a config (or internal model object) for each fold.
+
+Inference
+- Use our own inference engines in src/inference/: exact enumeration and variable elimination.
+
+Evaluation Metrics (per user)
+- Balanced Accuracy
+- F1 Score
+- Area Under Curve (AUC)
+- Brier Score
+- KL Divergence
+- Expected Calibration Loss (ECL)
+- Training Time (structure + CPT estimation)
+- Inference Time (per fold; average per instance can be computed)
+
+Reporting
+- Per-fold CSV fields (example):
+  dataset, fold, n_train, n_test, discretizer, bins, method, score, max_iter,
+  num_edges, train_time_s, param_time_s, total_train_time_s, infer_time_s,
+  bal_acc, f1, auc, brier, kl, ecl
+- Aggregated CSV: mean/std across folds.
+
+Experiment Flow (per dataset)
+1) Prepare K folds → store indices
+2) For each fold:
+   a) Build training/test split
+   b) Clean → Discretize (fit on train, transform test)
+   c) Structure learning on train (structure/hillclimb.py) → save DAG and edges
+   d) Parameter learning (cpt.py) on train → store CPTs/model for the fold
+   e) Evaluate on test (evaluator.py using inference engines) → collect metrics/timing
+   f) Write per-fold CSV row
+3) Aggregate all folds → write summary CSV
+
+Extensibility (beyond library wrappers)
+- Our core algorithms: CPT estimation, enumeration, VE, evaluator. Optional:
+  - Custom discretizers (quantile/MDL) if needed
+  - Custom hill-climb (BIC) to compare against bnlearn
+  - Edge constraints and prior knowledge integration
+
+Defaults
+- K=5, seed=42; bnlearn discretization (quantile) with 5 bins
+- Structure: hillclimb + BIC (default confirmed); PC as optional
+- Target variable: last column in CSV; binary (e.g., 0/1 or yes/no) for evaluation
+
+Deliverables
+- Reproducible runner scripts for K-fold experiments and reporting
+- Our BN model files/configs per fold (CPTs, edges), DAG images
+- Per-fold and summary CSVs

@@ -1,0 +1,166 @@
+
+Running BN experiment on /workspaces/CMP9794-Advanced-Artificial-Intelligence/aai_assignment/bayesian_net/data/raw/heart.csv ...
+Running hillclimb structure learning...
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [hillclimbsearch]
+[bnlearn] >Set scoring type at [bic]
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure HC+BIC: [('age', 'trestbps'), ('sex', 'target'), ('sex', 'ca'), ('cp', 'fbs'), ('thalach', 'age'), ('exang', 'thalach'), ('exang', 'cp'), ('oldpeak', 'slope'), ('slope', 'thalach'), ('slope', 'exang'), ('slope', 'restecg'), ('ca', 'fbs'), ('thal', 'target'), ('thal', 'sex'), ('target', 'exang'), ('target', 'oldpeak'), ('target', 'cp'), ('target', 'ca'), ('target', 'slope')]
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [hillclimbsearch]
+[bnlearn] >Set scoring type at [bic]
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure HC+BIC: [('age', 'trestbps'), ('sex', 'target'), ('sex', 'ca'), ('cp', 'fbs'), ('thalach', 'age'), ('exang', 'thalach'), ('exang', 'cp'), ('oldpeak', 'slope'), ('slope', 'thalach'), ('slope', 'exang'), ('slope', 'restecg'), ('ca', 'fbs'), ('thal', 'target'), ('thal', 'sex'), ('target', 'exang'), ('target', 'oldpeak'), ('target', 'cp'), ('target', 'ca'), ('target', 'slope')]
+Warning: bnlearn re-discretization failed for hillclimb fold 1: 'target' is not in list
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [hillclimbsearch]
+[bnlearn] >Set scoring type at [bic]
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure HC+BIC: [('age', 'target'), ('sex', 'thal'), ('sex', 'target'), ('sex', 'ca'), ('trestbps', 'age'), ('exang', 'thalach'), ('exang', 'cp'), ('oldpeak', 'slope'), ('slope', 'thalach'), ('slope', 'restecg'), ('slope', 'exang'), ('ca', 'fbs'), ('ca', 'chol'), ('thal', 'exang'), ('target', 'exang'), ('target', 'oldpeak'), ('target', 'cp'), ('target', 'ca'), ('target', 'thal'), ('target', 'slope')]
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [hillclimbsearch]
+[bnlearn] >Set scoring type at [bic]
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure HC+BIC: [('age', 'target'), ('sex', 'thal'), ('sex', 'target'), ('sex', 'ca'), ('trestbps', 'age'), ('exang', 'thalach'), ('exang', 'cp'), ('oldpeak', 'slope'), ('slope', 'thalach'), ('slope', 'restecg'), ('slope', 'exang'), ('ca', 'fbs'), ('ca', 'chol'), ('thal', 'exang'), ('target', 'exang'), ('target', 'oldpeak'), ('target', 'cp'), ('target', 'ca'), ('target', 'thal'), ('target', 'slope')]
+Warning: bnlearn re-discretization failed for hillclimb fold 2: 'target' is not in list
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [hillclimbsearch]
+[bnlearn] >Set scoring type at [bic]
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure HC+BIC: [('sex', 'thal'), ('sex', 'target'), ('sex', 'ca'), ('cp', 'exang'), ('chol', 'sex'), ('fbs', 'trestbps'), ('thalach', 'age'), ('exang', 'thalach'), ('exang', 'slope'), ('slope', 'oldpeak'), ('slope', 'thalach'), ('slope', 'restecg'), ('ca', 'fbs'), ('thal', 'target'), ('target', 'exang'), ('target', 'slope'), ('target', 'cp'), ('target', 'ca'), ('target', 'oldpeak')]
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [hillclimbsearch]
+[bnlearn] >Set scoring type at [bic]
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure HC+BIC: [('sex', 'thal'), ('sex', 'target'), ('sex', 'ca'), ('cp', 'exang'), ('chol', 'sex'), ('fbs', 'trestbps'), ('thalach', 'age'), ('exang', 'thalach'), ('exang', 'slope'), ('slope', 'oldpeak'), ('slope', 'thalach'), ('slope', 'restecg'), ('ca', 'fbs'), ('thal', 'target'), ('target', 'exang'), ('target', 'slope'), ('target', 'cp'), ('target', 'ca'), ('target', 'oldpeak')]
+Warning: bnlearn re-discretization failed for hillclimb fold 3: 'target' is not in list
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [hillclimbsearch]
+[bnlearn] >Set scoring type at [bic]
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure HC+BIC: [('age', 'trestbps'), ('sex', 'target'), ('sex', 'ca'), ('sex', 'chol'), ('trestbps', 'fbs'), ('thalach', 'slope'), ('thalach', 'age'), ('exang', 'cp'), ('exang', 'thalach'), ('slope', 'oldpeak'), ('slope', 'restecg'), ('thal', 'target'), ('thal', 'sex'), ('target', 'exang'), ('target', 'thalach'), ('target', 'cp'), ('target', 'ca'), ('target', 'oldpeak'), ('target', 'slope')]
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [hillclimbsearch]
+[bnlearn] >Set scoring type at [bic]
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure HC+BIC: [('age', 'trestbps'), ('sex', 'target'), ('sex', 'ca'), ('sex', 'chol'), ('trestbps', 'fbs'), ('thalach', 'slope'), ('thalach', 'age'), ('exang', 'cp'), ('exang', 'thalach'), ('slope', 'oldpeak'), ('slope', 'restecg'), ('thal', 'target'), ('thal', 'sex'), ('target', 'exang'), ('target', 'thalach'), ('target', 'cp'), ('target', 'ca'), ('target', 'oldpeak'), ('target', 'slope')]
+Warning: bnlearn re-discretization failed for hillclimb fold 4: 'target' is not in list
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [hillclimbsearch]
+[bnlearn] >Set scoring type at [bic]
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure HC+BIC: [('age', 'trestbps'), ('sex', 'restecg'), ('sex', 'ca'), ('cp', 'exang'), ('thalach', 'age'), ('oldpeak', 'slope'), ('slope', 'thalach'), ('slope', 'restecg'), ('ca', 'fbs'), ('thal', 'target'), ('thal', 'sex'), ('target', 'oldpeak'), ('target', 'exang'), ('target', 'cp'), ('target', 'ca'), ('target', 'thalach'), ('target', 'slope'), ('target', 'sex'), ('target', 'age')]
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [hillclimbsearch]
+[bnlearn] >Set scoring type at [bic]
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure HC+BIC: [('age', 'trestbps'), ('sex', 'restecg'), ('sex', 'ca'), ('cp', 'exang'), ('thalach', 'age'), ('oldpeak', 'slope'), ('slope', 'thalach'), ('slope', 'restecg'), ('ca', 'fbs'), ('thal', 'target'), ('thal', 'sex'), ('target', 'oldpeak'), ('target', 'exang'), ('target', 'cp'), ('target', 'ca'), ('target', 'thalach'), ('target', 'slope'), ('target', 'sex'), ('target', 'age')]
+Warning: bnlearn re-discretization failed for hillclimb fold 5: 'target' is not in list
+Running pc_stable structure learning...
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [pc]
+[bnlearn] >Build skeleton with [chi_square] and alpha=0.05
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [07:16<00:00, 138.63s/it]INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [12:11<00:00, 146.39s/it]
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [07:31<00:00, 143.23s/it]INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [12:21<00:00, 148.39s/it]
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure PC-Stable: [('chol', 'age'), ('fbs', 'trestbps'), ('fbs', 'ca'), ('trestbps', 'age'), ('cp', 'thalach'), ('cp', 'oldpeak'), ('sex', 'chol'), ('sex', 'thalach'), ('sex', 'trestbps'), ('sex', 'age'), ('ca', 'trestbps'), ('ca', 'age'), ('ca', 'thalach'), ('exang', 'cp'), ('exang', 'oldpeak'), ('exang', 'thalach'), ('thal', 'age'), ('thal', 'chol'), ('target', 'thalach'), ('target', 'trestbps'), ('target', 'age'), ('oldpeak', 'thalach'), ('slope', 'oldpeak'), ('slope', 'thalach')]
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [pc]
+[bnlearn] >Build skeleton with [chi_square] and alpha=0.05
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [06:57<00:00, 131.21s/it]INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [11:25<00:00, 137.13s/it]
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [06:45<00:00, 128.60s/it]INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [11:12<00:00, 134.58s/it]
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure PC-Stable: [('chol', 'age'), ('fbs', 'trestbps'), ('fbs', 'ca'), ('trestbps', 'age'), ('cp', 'thalach'), ('cp', 'oldpeak'), ('sex', 'chol'), ('sex', 'thalach'), ('sex', 'trestbps'), ('sex', 'age'), ('ca', 'trestbps'), ('ca', 'age'), ('ca', 'thalach'), ('exang', 'cp'), ('exang', 'oldpeak'), ('exang', 'thalach'), ('thal', 'age'), ('thal', 'chol'), ('target', 'thalach'), ('target', 'trestbps'), ('target', 'age'), ('oldpeak', 'thalach'), ('slope', 'oldpeak'), ('slope', 'thalach')]
+Warning: bnlearn re-discretization failed for pc_stable fold 1: 'target' is not in list
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [pc]
+[bnlearn] >Build skeleton with [chi_square] and alpha=0.05
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [09:05<00:00, 173.44s/it]INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [16:40<00:00, 200.10s/it]
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [09:04<00:00, 173.17s/it]INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [16:41<00:00, 200.34s/it]
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure PC-Stable: [('exang', 'trestbps'), ('exang', 'cp'), ('exang', 'oldpeak'), ('exang', 'thalach'), ('trestbps', 'thalach'), ('cp', 'thalach'), ('cp', 'trestbps'), ('thal', 'thalach'), ('thal', 'age'), ('slope', 'age'), ('slope', 'oldpeak'), ('slope', 'thalach'), ('age', 'thalach'), ('ca', 'age'), ('sex', 'thalach'), ('sex', 'trestbps'), ('oldpeak', 'thalach'), ('target', 'trestbps'), ('target', 'age'), ('chol', 'thalach'), ('chol', 'target')]
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [pc]
+[bnlearn] >Build skeleton with [chi_square] and alpha=0.05
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [09:09<00:00, 174.85s/it]INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [16:47<00:00, 201.57s/it]
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [09:09<00:00, 175.03s/it]INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [16:50<00:00, 202.11s/it]
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure PC-Stable: [('exang', 'trestbps'), ('exang', 'cp'), ('exang', 'oldpeak'), ('exang', 'thalach'), ('trestbps', 'thalach'), ('cp', 'thalach'), ('cp', 'trestbps'), ('thal', 'thalach'), ('thal', 'age'), ('slope', 'age'), ('slope', 'oldpeak'), ('slope', 'thalach'), ('age', 'thalach'), ('ca', 'age'), ('sex', 'thalach'), ('sex', 'trestbps'), ('oldpeak', 'thalach'), ('target', 'trestbps'), ('target', 'age'), ('chol', 'thalach'), ('chol', 'target')]
+Warning: bnlearn re-discretization failed for pc_stable fold 2: 'target' is not in list
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [pc]
+[bnlearn] >Build skeleton with [chi_square] and alpha=0.05
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [10:57<00:00, 213.16s/it]INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [22:34<00:00, 270.92s/it]
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [10:59<00:00, 213.51s/it]INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [22:36<00:00, 271.21s/it]
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure PC-Stable: [('cp', 'thalach'), ('cp', 'age'), ('thalach', 'age'), ('ca', 'trestbps'), ('ca', 'age'), ('ca', 'thalach'), ('trestbps', 'thalach'), ('trestbps', 'age'), ('thal', 'thalach'), ('thal', 'age'), ('thal', 'oldpeak'), ('sex', 'thalach'), ('sex', 'trestbps'), ('sex', 'age'), ('target', 'thalach'), ('target', 'age'), ('oldpeak', 'thalach'), ('slope', 'oldpeak'), ('slope', 'thalach'), ('chol', 'thalach')]
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [pc]
+[bnlearn] >Build skeleton with [chi_square] and alpha=0.05
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [11:01<00:00, 213.94s/it]INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [22:36<00:00, 271.36s/it]
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [11:01<00:00, 214.30s/it]INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [22:38<00:00, 271.73s/it]
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure PC-Stable: [('cp', 'thalach'), ('cp', 'age'), ('thalach', 'age'), ('ca', 'trestbps'), ('ca', 'age'), ('ca', 'thalach'), ('trestbps', 'thalach'), ('trestbps', 'age'), ('thal', 'thalach'), ('thal', 'age'), ('thal', 'oldpeak'), ('sex', 'thalach'), ('sex', 'trestbps'), ('sex', 'age'), ('target', 'thalach'), ('target', 'age'), ('oldpeak', 'thalach'), ('slope', 'oldpeak'), ('slope', 'thalach'), ('chol', 'thalach')]
+Warning: bnlearn re-discretization failed for pc_stable fold 3: 'target' is not in list
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [pc]
+[bnlearn] >Build skeleton with [chi_square] and alpha=0.05
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [09:48<00:00, 189.20s/it]INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [19:14<00:00, 230.90s/it]
+WARNING:pgmpy:PDAG has no faithful extension (= no oriented DAG with the same v-structures as PDAG). Remaining undirected PDAG edges oriented arbitrarily.
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [09:50<00:00, 189.76s/it]INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [19:16<00:00, 231.30s/it]
+WARNING:pgmpy:PDAG has no faithful extension (= no oriented DAG with the same v-structures as PDAG). Remaining undirected PDAG edges oriented arbitrarily.
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure PC-Stable: [('fbs', 'trestbps'), ('fbs', 'thalach'), ('trestbps', 'thalach'), ('cp', 'thalach'), ('cp', 'trestbps'), ('ca', 'trestbps'), ('ca', 'thalach'), ('thal', 'thalach'), ('thal', 'target'), ('thal', 'age'), ('age', 'ca'), ('age', 'thalach'), ('age', 'target'), ('sex', 'thalach'), ('sex', 'trestbps'), ('sex', 'cp'), ('target', 'thalach'), ('oldpeak', 'thalach'), ('slope', 'oldpeak'), ('slope', 'thalach'), ('chol', 'thalach'), ('exang', 'thalach')]
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [pc]
+[bnlearn] >Build skeleton with [chi_square] and alpha=0.05
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [09:46<00:00, 188.49s/it]INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [19:13<00:00, 230.63s/it]
+WARNING:pgmpy:PDAG has no faithful extension (= no oriented DAG with the same v-structures as PDAG). Remaining undirected PDAG edges oriented arbitrarily.
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [09:47<00:00, 188.74s/it]INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [19:14<00:00, 230.95s/it]
+WARNING:pgmpy:PDAG has no faithful extension (= no oriented DAG with the same v-structures as PDAG). Remaining undirected PDAG edges oriented arbitrarily.
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure PC-Stable: [('fbs', 'trestbps'), ('fbs', 'thalach'), ('trestbps', 'thalach'), ('cp', 'thalach'), ('cp', 'trestbps'), ('ca', 'trestbps'), ('ca', 'thalach'), ('thal', 'thalach'), ('thal', 'target'), ('thal', 'age'), ('age', 'ca'), ('age', 'thalach'), ('age', 'target'), ('sex', 'thalach'), ('sex', 'trestbps'), ('sex', 'cp'), ('target', 'thalach'), ('oldpeak', 'thalach'), ('slope', 'oldpeak'), ('slope', 'thalach'), ('chol', 'thalach'), ('exang', 'thalach')]
+Warning: bnlearn re-discretization failed for pc_stable fold 4: 'target' is not in list
+                                
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [pc]
+[bnlearn] >Build skeleton with [chi_square] and alpha=0.05
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [06:46<00:00, 127.42s/it]INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [12:07<00:00, 145.55s/it]
+WARNING:pgmpy:PDAG has no faithful extension (= no oriented DAG with the same v-structures as PDAG). Remaining undirected PDAG edges oriented arbitrarily.
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [06:44<00:00, 126.81s/it]INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [12:06<00:00, 145.28s/it]
+WARNING:pgmpy:PDAG has no faithful extension (= no oriented DAG with the same v-structures as PDAG). Remaining undirected PDAG edges oriented arbitrarily.
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure PC-Stable: [('cp', 'thalach'), ('cp', 'oldpeak'), ('ca', 'age'), ('ca', 'trestbps'), ('trestbps', 'thalach'), ('restecg', 'sex'), ('fbs', 'ca'), ('fbs', 'age'), ('thal', 'thalach'), ('slope', 'cp'), ('slope', 'thalach'), ('slope', 'oldpeak'), ('target', 'thalach'), ('target', 'age'), ('target', 'trestbps'), ('oldpeak', 'target'), ('oldpeak', 'thalach'), ('chol', 'thalach'), ('exang', 'thalach')]
+[bnlearn] >Warning: Computing DAG with 14 nodes can take a very long time!
+[bnlearn] >Computing best DAG using [pc]
+[bnlearn] >Build skeleton with [chi_square] and alpha=0.05
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [06:45<00:00, 127.27s/it]INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [12:06<00:00, 145.29s/it]
+WARNING:pgmpy:PDAG has no faithful extension (= no oriented DAG with the same v-structures as PDAG). Remaining undirected PDAG edges oriented arbitrarily.
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [06:45<00:00, 126.97s/it]
+INFO:pgmpy:Reached maximum number of allowed conditional variables. Exiting
+Working for n conditional variables: 5: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [12:11<00:00, 146.22s/it]
+WARNING:pgmpy:PDAG has no faithful extension (= no oriented DAG with the same v-structures as PDAG). Remaining undirected PDAG edges oriented arbitrarily.
+[bnlearn] >Compute structure scores for model comparison (higher is better).
+Learnt Structure PC-Stable: [('cp', 'thalach'), ('cp', 'oldpeak'), ('ca', 'age'), ('ca', 'trestbps'), ('trestbps', 'thalach'), ('restecg', 'sex'), ('fbs', 'ca'), ('fbs', 'age'), ('thal', 'thalach'), ('slope', 'cp'), ('slope', 'thalach'), ('slope', 'oldpeak'), ('target', 'thalach'), ('target', 'age'), ('target', 'trestbps'), ('oldpeak', 'target'), ('oldpeak', 'thalach'), ('chol', 'thalach'), ('exang', 'thalach')]
+Warning: bnlearn re-discretization failed for pc_stable fold 5: 'target' is not in list
+Wrote per-fold results to /workspaces/CMP9794-Advanced-Artificial-Intelligence/aai_assignment/bayesian_net/data/raw/reports/bn_results_heart.csv.csv
+Wrote summary to /workspaces/CMP9794-Advanced-Artificial-Intelligence/aai_assignment/bayesian_net/data/raw/reports/bn_summary_heart.csv.csv
